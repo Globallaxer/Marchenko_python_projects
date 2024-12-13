@@ -13,4 +13,4 @@ while True:
         break       
 
     except ValueError:
-        print('Ошибка, введите строку')
+        print('Ошибка, введите строку') 
