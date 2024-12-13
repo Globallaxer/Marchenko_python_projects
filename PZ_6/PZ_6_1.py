@@ -12,12 +12,11 @@ while True:
             b = random.randint(0,10)
             a.append(b)
             i += 1
-        a.sort()
-        print(a)    
+        print(f'Список сгенерирован = {a}')    
         plus_numbers = a[0::2]
         minus_numbers = a[1::2][::-1]
         result = plus_numbers + minus_numbers
-        print(result)   
+        print(f'Результат = {result}')   
         break
 
     except ValueError:
