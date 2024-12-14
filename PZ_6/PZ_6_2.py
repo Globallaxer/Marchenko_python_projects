@@ -14,7 +14,6 @@ while True:
             a.append(b)
             i += 1
         print(f'Список сгенерирован = {a}')
-        d = 1
         B = []
         C = []
         for O in a:

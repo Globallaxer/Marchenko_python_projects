@@ -7,7 +7,7 @@ while True:
         a = []
         n = int(input("b "))
         i = 1
-        while i < n:
+        while i <= n:
             b = random.randint(0, 10)
             a.append(b)
             i += 1
