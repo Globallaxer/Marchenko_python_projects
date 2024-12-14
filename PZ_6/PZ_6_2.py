@@ -18,7 +18,7 @@ while True:
         B = []
         C = []
         for O in a:
-            if O > 0 :
+            if O >= 0 :
                 B.append(O)
             else:
                 C.append(O)

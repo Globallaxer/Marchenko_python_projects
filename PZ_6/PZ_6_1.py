@@ -13,8 +13,8 @@ while True:
             a.append(b)
             i += 1
         print(f'Список сгенерирован = {a}')    
-        plus_numbers = a[0::2]
-        minus_numbers = a[1::2][::-1]
+        plus_numbers = a[::2]
+        minus_numbers = a[::2][::-1]
         result = plus_numbers + minus_numbers
         print(f'Результат = {result}')   
         break
