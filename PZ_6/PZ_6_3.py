@@ -13,8 +13,8 @@ while True:
             i += 1
         print(f'Созданный список: {a}')
         last_fragment = a[-1]
-        for d in range(len(a) -1, 0 , -1) :
-            a[d] = a[d + 1]
+        for d in range(len(a) -1, 0 , -1):
+            a[d] = a[d - 1]
         a[0] = last_fragment
 
         print(f"Список после циклического сдвига - {a}")               
