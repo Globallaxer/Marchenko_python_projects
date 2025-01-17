@@ -1,18 +1,17 @@
 # Дана строка. Подсчитать количество содержащихся в ней прописных латинских букв.
 while True:
     try:
-        s = input()
+        s = input("Введите строку = ")
         i = 1 
-        b = 0
-        sl = s.join
-        print(len(sl))
-        for i in range(len(s)):
-            if i == 'a'   :
-              b += 1
-        print(b)
-        break     
-        break 
+        otvet = 0
+        for i in s:
+            n = int(ord(i))
+            if 97 <= n <= 122:
+                otvet += 1
+        print(f'кол-во латинских прописных букв в этой строке = {otvet}')
+        break        
+
     except ValueError:
-        print("a")
+        print("Ошибка, Введите строку")
 
                
