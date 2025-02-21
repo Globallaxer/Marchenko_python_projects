@@ -7,6 +7,33 @@
 # Индекс первого минимального элемента:
 # Умножаем все элементы на минимальный элемент:
 
+l = input('')
 f3 = open('data_3.txt', 'w')
 f3.writelines(l)
 f3.close()
+
+f4 = open('data_4.txt', 'w')
+f4.write('Исходные данные: ')
+f4.write('\n')
+f4.writelines(l)
+f4.close()
+
+f3 = open('data_3.txt')
+k = f3.read()
+k = k.split()
+f = []
+i = 0
+for i in k:
+    i = int(i)
+    min_el = min(k)
+    min_el = int(min_el)
+    f.append(i * min_el)
+index = k.index(min(k))
+
+f4 = open('data_4.txt', 'a')
+
+f4.write('\n' f'Количество элементов: {len(k)}''\n' )
+f4.write('\n' f'Индекс первого минимального значения: {index}''\n' )
+f4.write('\n' f'Умноженные элементы: {f}''\n' )
+
+f4.close()
