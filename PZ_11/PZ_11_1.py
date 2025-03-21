@@ -14,7 +14,6 @@ f3.close()
 
 f4 = open('data_4.txt', 'w')
 f4.write('Исходные данные: ')
-f4.write('\n')
 f4.writelines(l)
 f4.close()
 
