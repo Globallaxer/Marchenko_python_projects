@@ -2,3 +2,11 @@
 # исходной последовательности организовать последовательность, содержащую
 # положительные числа и последовательность, содержащую отрицательные числа. Найти
 # количество элементов в полученных последовательностях.
+import random
+vvod = int(input('Введите желаемое кол-во элементов - '))
+random_vvode = [random.randint(-100, 100) for i in range(vvod)]
+print(f'Сгенерированный список - {random_vvode}')
+
+minus_vvod = [i for i in random_vvode if i<0]
+plus_vvod = [i for i in random_vvode if i>0]
+print(f'все отрицательные числа - {minus_vvod}, все положительные числа - {plus_vvod}')
