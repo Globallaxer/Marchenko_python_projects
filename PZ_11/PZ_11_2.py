@@ -11,7 +11,13 @@ with open('text18-14.txt','r',encoding='utf-8') as file:
     for line in content:
         print(line,end="")
     if len(content) >= 3:
-        line_ascii = [str(ord(char)) for char in content[2]]
+        # line_ascii = [str(ord(char)) for char in content[2]]
+        line_ascii = []
+        for char in content[2]:
+            ord_char = str(ord(char))
+            line_ascii.append(ord_char)
+            
+
         content[2] = ' '.join(line_ascii)+ "\n"
     with open("text18-14_mod.txt",'w', encoding='utf-8') as new_file:
         new_file.writelines(content)

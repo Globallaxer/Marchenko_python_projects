@@ -9,4 +9,4 @@ print(f'Сгенерированный список - {random_vvode}')
 
 minus_vvod = [i for i in random_vvode if i<0]
 plus_vvod = [i for i in random_vvode if i>0]
-print(f'все отрицательные числа - {minus_vvod}, все положительные числа - {plus_vvod}')
+print(f'все отрицательные числа - {minus_vvod}, все положительные числа - {plus_vvod},кол-во положительных символов - {len(plus_vvod)}, кол-во отрицательных элемнетов - {len(minus_vvod)}')
