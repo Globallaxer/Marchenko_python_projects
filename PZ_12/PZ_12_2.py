@@ -3,7 +3,7 @@ def extract_digits(s):
     for char in stroka:
         if char.isdigit():
             yield char
-stroka = input('')
+stroka = input('Введите строку')
 digits = extract_digits(stroka)
 # for digit in digits:
 #     print(digit)
