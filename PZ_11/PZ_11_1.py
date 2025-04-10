@@ -7,16 +7,9 @@
 # Количество элементов:
 # Индекс первого минимального элемента:
 # Умножаем все элементы на минимальный элемент:
+import random
 
-l = input('Введите желаемую последовательность - ')
-l = l.split(',')
-with open('data_3.txt','w',encoding='utf-8') as file:
-    file.writelines(l)
-min_el = None
-for i in range(len(l)):
-    int_i = int(i)
-    if int_i < int_i + 1:
-        min_el = int_i
-        break
-print(min_el)
-
+vvod = int(input('Введите желаемое кол-во элементов - '))
+random_vvode = [random.randint(-100, 100) for i in range(vvod)]
+with open('data_3.txt','w', encoding='UTF-8') as file:
+    file.writelines(random_vvode)
