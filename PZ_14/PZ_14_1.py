@@ -8,12 +8,10 @@ try:
     with open('hotline1.txt', 'r', encoding='utf-8') as file:
         text = file.read()
         
-    # Поиск номеров телефонов
     phone_numbers = re.findall(r'8\(\d{3}\)\d{3}-\d{2}-\d{2}', text)
     count = len(phone_numbers)
     print(f'Найдено номеров: {count}')
 
-    # Добавление фразы в новый файл
     new_text = text.replace('Горячая линия', 'Горячая линия Министерства образования Ростовской области')
     
     with open('hotline2.txt', 'w', encoding='utf-8') as new_file:
