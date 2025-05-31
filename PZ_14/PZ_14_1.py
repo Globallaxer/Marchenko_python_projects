@@ -21,5 +21,3 @@ try:
         
 except FileNotFoundError:
     print("Ошибка: Файл hotline1.txt не найден")
-except Exception as e:
-    print(f'Произошла ошибка: {str(e)}')
